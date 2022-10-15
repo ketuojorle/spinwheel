@@ -1,0 +1,240 @@
+@import 
+url("https://fonts.googleapis.com/css?family=Raleway");
+@import 
+url("https://fonts.googleapis.com/css?family=Montserrat");
+@import 
+url("https://fonts.googleapis.com/css?family=Sofia");
+
+*{
+    box-sizing: border-box;
+}
+body{
+  margin:0px;
+  padding:0px;
+     }
+ 
+#game-name{
+     position:absolute;
+     top:0.1%;
+     left:17%;
+     font-family:sofia;
+     font-stretch:ultra-expanded;
+     color:red;
+     text-shadow: 2px 2px 2px grey,
+                  1px 1px 1px red;
+}
+
+#game-name::first-letter{
+    font-size: 150%;  
+         }
+  
+     #container{
+      width: 100%;
+      height:100%;
+      position:fixed;
+      margin: 0%;
+      font-size: 16px;
+      font-family: Montserrat;
+      font-weight: bold;
+      
+   } 
+
+#raffle-machine{
+     width:100%;
+     height:100%;
+     margin:0;
+     padding:0;
+     position:fixed;
+     overflow:fixed;
+     border:2px solid black;
+     border-radius: 0px;
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     background-color: dodgerblue;
+}
+
+.partition{
+     width:100%;
+     height:100%;
+     position:relative;
+     box-sizing: border-box;
+     padding:5px 10px;
+     border:0px solid grey;
+     border-radius:0px;
+     background-color:white;
+     display:grid;
+     grid-template-columns:99%;
+     gap:5px;
+     justify-content:center;
+     align-items: center;
+    /* box-shadow: 4px 6px 2px 0px rgba(0,0,0,0.9); */
+}
+
+
+#wheel{ 
+      width:200px;
+      height:200px; 
+      position:relative;
+      margin: auto;
+      border: 7px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background-image:repeating-conic-gradient(red 0deg 10deg, green 12deg 20deg, yellow 22deg 30deg);
+      animation: spinwheel 0.5s linear infinite normal ; 
+      animation-play-state: paused;
+      }
+  @keyframes spinwheel {
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+  }
+
+   #axial-disc{ 
+      width:100px;
+      height: 100px; 
+      position:fixed;
+      border: 2px solid white;
+      border-radius:50%;
+      color: white;
+      background-color:black;
+      font-size: 16px;
+      font-weight:bold;
+      text-align: center;
+      padding:1px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+       }
+   
+   #axial-disc:hover{
+    cursor: pointer;
+    font-weight: bold;
+   }
+
+   .tk-table{
+     margin:auto;
+     width:80%;
+     color:#ffffff;
+     font-size: 14px;
+     font-weight:bold;
+     display: grid;
+     grid-template-columns: auto auto;
+     justify-content:space-evenly;
+     align-items: center;
+     gap:10px;
+     background-color: dodgerblue;
+     padding:1px;
+     border-radius: 10px 10px 0px 0px;    
+   }
+
+   span.reset-span{
+     position: relative;
+     margin:auto;
+     }
+
+   .reset-button{
+     font-size: 12px;
+     position: relative;
+     padding: 5px 10px;
+     color:white;
+     border:2px solid grey;
+     border-radius: 50px;
+     box-sizing: border-box;
+     animation: resetbtn 0.6s ease-in-out normal ;
+    }
+    @keyframes resetbtn{
+     from{opacity:0;}
+     to{opacity:1;}
+    }
+
+   .reset-button:hover{
+     cursor: pointer;
+
+     }
+     #tk-box{
+          width:80%;
+          margin:auto;
+          display: grid;
+          grid-template-columns: auto auto auto auto auto;
+          justify-content:space-evenly;
+          align-items: center;
+          gap:5px;
+          background-color: dodgerblue;
+          box-sizing:border-box;
+          padding:5px 0px;
+          border-radius: 0px 0px 10px 10px; 
+          
+     }
+
+     
+     #tk-box > button{
+          font-size: 20px;
+          font-weight: bold;
+          text-align: center;
+          width: 100px;
+          height: 70px;
+          padding:10px 10px;
+          border: 2px solid grey;
+     }
+
+  .tk-holder{
+     width:100px;
+     height: 40px;
+     padding: 0px;
+     box-sizing: border-box;
+     border-style: solid dashed;
+     border-width:2px;
+     background-image: url('nostradamus.png');
+     background-size: 98% 98%;
+     background-repeat: no-repeat;
+     visibility: hidden;
+     animation: pickedticket 5s ease-in-out normal ;
+    }
+    @keyframes pickedticket{
+     from{opacity:0;}
+     to{opacity:1;}
+    }
+
+   
+    .tk-inner{
+     width:98%;
+     height: 98%;
+     text-align: center;
+     font-size: 20px;
+     padding: 5px;
+     background-color: rgba(255,255,255,0.1);
+     color: yellow;
+     font-weight: bold;
+     text-shadow: -2px 0px 4px black, 2px 0px 4px black, 0px 2px 4px black;
+    }
+
+    #remark{
+     font-size: 12px;
+     font-weight: lighter;
+     text-align: center;
+     color:green;
+     font-weight:bold;
+     animation: commentBlink 0.4s ease-in-out infinite alternate;
+     animation-play-state:paused;
+      }
+@keyframes commentBlink{
+ from{color:green;}
+ to{color:white;}
+        }
+
+   span.green{
+     color:green;
+   } 
+
+   
+   
+       
+    
+                           
+              
+    
+                              
+                
