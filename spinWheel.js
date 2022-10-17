@@ -3,8 +3,9 @@ window.addEventListener("load", function(){
 
     let raffleMachine = document.getElementById("raffle-machine");
     let partition = document.getElementById("partition"); 
-    let siteName = document.createElement('h1');
+    let siteName = document.createElement('h4');
     siteName.setAttribute('id', 'game-name');
+    siteName.setAttribute('class', 'game-name');
     siteName.innerHTML = "Spin<span class='green'>wheel</span>";
     partition.appendChild(siteName);
     let spinningWheel = document.getElementById("wheel");
