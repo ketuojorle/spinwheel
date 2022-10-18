@@ -220,6 +220,7 @@ body{
        body{padding:0px 120px;background-color: #ffffff; }
        .partition{position: relative; border-radius: 10px;}
        #game-name{font-size: 40px;} 
+       
                      }
  
     @media only screen and (max-width :600px){  /*FOR SMALL SCREEN PHONES */
