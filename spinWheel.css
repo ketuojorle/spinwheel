@@ -17,12 +17,12 @@ body{
 .game-name{
      position:absolute;
      top:0%;
-     left:5%;
+     left:3%;
      font-family:sofia;
      font-stretch:expanded;
-     color:red;
-     text-shadow: 2px 2px 0px white,
-                  1px 1px 1px white;
+     color:white;
+     text-shadow: 2px 2px 0px grey,
+                  1px 1px 2px grey;
 }
 
 #game-name::first-letter{
