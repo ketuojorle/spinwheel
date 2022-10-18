@@ -17,7 +17,7 @@ body{
 .game-name{
      position:absolute;
      top:0%;
-     left:10%;
+     left:5%;
      font-family:sofia;
      font-stretch:expanded;
      color:red;
@@ -29,22 +29,6 @@ body{
     font-size: 150%;  
          }
   
-    
-
-#raffle-machine{
-     width:100%;
-     height:100%;
-     margin:0;
-     padding:0;
-     position:fixed;
-     overflow:fixed;
-     border:2px solid black;
-     border-radius: 0px;
-     display:flex;
-     justify-content: center;
-     align-items: center;
-     background-color: dodgerblue;
-}
 
 .partition{
      width:100%;
@@ -62,30 +46,6 @@ body{
      justify-content:center;
      align-items: center;
     /* box-shadow: 4px 6px 2px 0px rgba(0,0,0,0.9); */
-}
-
-.bartition{
-     width:100%;
-     height:100%;
-     position:relative;
-     box-sizing: border-box;
-     padding:5px 10px;
-     border:0px solid grey;
-     border-radius:0px;
-     color:#000000;
-     background-color:rgba(0,0,0,1.0);
-     display:grid;
-     grid-template-columns:99%;
-     gap:5px;
-     justify-content:center;
-     align-items: center;
-    /* box-shadow: 4px 6px 2px 0px rgba(0,0,0,0.9); */
-} 
-
-.wrapper{
-     display:inherit;
-     border:2px solid red;
-     padding: 10px 0px ;
 }
 
 #wheel{ 
@@ -252,14 +212,14 @@ body{
    @media only screen and (min-width :768px){  /* LANDSCAPE TABLETS, LAPTOPS, DESKTOPS*/
        body{padding:0px 120px;background-color: #ffffff; }
        .partition{position: relative; border-radius: 10px;}
-       #game-name{font-size: 30px;} 
+       #game-name{font-size: 40px;} 
         } 
                      
  
     @media only screen and (min-width :600px){  /* FOR LARGE PHONES AND TABLETS */
        body{padding:0px 120px;background-color: #ffffff; }
        .partition{position: relative; border-radius: 10px;}
-       #game-name{font-size: 30px;} 
+       #game-name{font-size: 40px;} 
                      }
  
     @media only screen and (max-width :600px){  /*FOR SMALL SCREEN PHONES */
